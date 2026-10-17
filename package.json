@@ -4,6 +4,15 @@
 	"description": "TypeScript-first DynamoDB library built around single-table design",
 	"private": true,
 	"type": "module",
+	"scripts": {
+		"test": "npm run test:lint",
+		"test:lint": "npm run test:lint:prettier && npm run test:lint:eslint",
+		"test:lint:prettier": "npx prettier --check .",
+		"test:lint:eslint": "npx eslint .",
+		"format": "npm run format:prettier && npm run format:eslint",
+		"format:prettier": "npx prettier --write .",
+		"format:eslint": "npx eslint --fix ."
+	},
 	"workspaces": [
 		"packages/*"
 	],
