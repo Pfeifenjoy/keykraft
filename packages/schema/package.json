@@ -15,7 +15,8 @@
 		"build": "npx tsc"
 	},
 	"files": [
-		"dist"
+		"dist",
+		"README.md"
 	],
 	"repository": {
 		"type": "git",

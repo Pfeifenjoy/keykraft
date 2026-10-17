@@ -1,6 +1,7 @@
 # ⚒️ KeyKraft
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
+![CI](https://github.com/Pfeifenjoy/keykraft/actions/workflows/ci.yml/badge.svg)
 
 A TypeScript-first DynamoDB library built around single-table design. Define your table schema once with Zod — KeyKraft enforces access patterns, generates type-safe query builders, and ships a CDK construct that provisions the exact table your schema describes.
 
