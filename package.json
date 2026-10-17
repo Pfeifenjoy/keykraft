@@ -13,5 +13,8 @@
 	"bugs": {
 		"url": "https://github.com/Pfeifenjoy/keycraft/issues"
 	},
-	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme"
+	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme",
+	"devDependencies": {
+		"prettier": "^3.9.10"
+	}
 }
