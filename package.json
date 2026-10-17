@@ -1,0 +1,17 @@
+{
+	"name": "keycraft",
+	"version": "1.0.0",
+	"description": "TypeScript-first DynamoDB library built around single-table design",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pfeifenjoy/keycraft.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Pfeifenjoy/keycraft/issues"
+	},
+	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme"
+}
