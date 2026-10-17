@@ -6,9 +6,10 @@
 	"type": "module",
 	"scripts": {
 		"test": "npm run test:lint",
-		"test:lint": "npm run test:lint:prettier && npm run test:lint:eslint",
+		"test:lint": "npm run test:lint:prettier && npm run test:lint:eslint && npm run test:lint:cspell",
 		"test:lint:prettier": "npx prettier --check .",
 		"test:lint:eslint": "npx eslint .",
+		"test:lint:cspell": "npx cspell .",
 		"format": "npm run format:prettier && npm run format:eslint",
 		"format:prettier": "npx prettier --write .",
 		"format:eslint": "npx eslint --fix ."
@@ -25,6 +26,7 @@
 	},
 	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme",
 	"devDependencies": {
+		"cspell": "^10.4.0",
 		"eslint": "^10.13.0",
 		"prettier": "^3.9.10",
 		"typescript-eslint": "^8.71.2"

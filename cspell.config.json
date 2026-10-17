@@ -1,0 +1,15 @@
+{
+	"version": "0.2",
+	"language": "en",
+	"ignorePaths": ["node_modules", "dist", "package-lock.json"],
+	"words": [
+		"keycraft",
+		"Arwed",
+		"Mett",
+		"stringly",
+		"unmarshalling",
+		"Serialisation",
+		"optimised",
+		"Dynamoose"
+	]
+}
