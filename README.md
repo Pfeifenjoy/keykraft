@@ -1,8 +1,8 @@
-# ⚒️ KeyCraft
+# ⚒️ KeyKraft
 
 ![Status](https://img.shields.io/badge/status-work%20in%20progress-orange)
 
-A TypeScript-first DynamoDB library built around single-table design. Define your table schema once with Zod — KeyCraft enforces access patterns, generates type-safe query builders, and ships a CDK construct that provisions the exact table your schema describes.
+A TypeScript-first DynamoDB library built around single-table design. Define your table schema once with Zod — KeyKraft enforces access patterns, generates type-safe query builders, and ships a CDK construct that provisions the exact table your schema describes.
 
 ## 💡 Motivation
 
@@ -13,17 +13,17 @@ DynamoDB's power comes from single-table design, but the ergonomics are rough:
 - Nothing stops you from putting a `User` item where an `Order` belongs
 - Marshalling/unmarshalling is boilerplate that hides bugs
 
-KeyCraft treats the schema as the single source of truth. Your entity definitions drive the CDK table construct, the query client, and your TypeScript types — all from one place.
+KeyKraft treats the schema as the single source of truth. Your entity definitions drive the CDK table construct, the query client, and your TypeScript types — all from one place.
 
 ## 🧠 Core concepts
 
 ### Single-table design
 
-KeyCraft assumes one DynamoDB table per domain, with composite keys (`PK` / `SK`) and overloaded item types. Entities share the same table and are distinguished by their key prefixes. This is a constraint, not a configuration option — it's what makes the type safety tractable.
+KeyKraft assumes one DynamoDB table per domain, with composite keys (`PK` / `SK`) and overloaded item types. Entities share the same table and are distinguished by their key prefixes. This is a constraint, not a configuration option — it's what makes the type safety tractable.
 
 ### Entity key builders
 
-Each entity declares how its primary key is constructed from its attributes. KeyCraft uses these builders to:
+Each entity declares how its primary key is constructed from its attributes. KeyKraft uses these builders to:
 
 - Generate keys on write automatically
 - Derive `KeyConditionExpression` values on query without you writing expression strings
@@ -50,7 +50,7 @@ Single-table design is the access pattern DynamoDB is optimised for. Supporting 
 Zod has the widest adoption in the TS ecosystem and the most mature ecosystem of transformers and plugins. The core is decoupled enough that a Valibot adapter is feasible later, but Zod ships first.
 
 **Why not wrap an existing ORM (Dynamoose, DynamoDB Toolbox)?**  
-Existing libraries predate the modern Zod ecosystem and carry design decisions that conflict with strict single-table patterns. KeyCraft is designed schema-first with CDK parity as a first-class constraint.
+Existing libraries predate the modern Zod ecosystem and carry design decisions that conflict with strict single-table patterns. KeyKraft is designed schema-first with CDK parity as a first-class constraint.
 
 ## 🤝 Contributing
 

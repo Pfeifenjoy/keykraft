@@ -1,5 +1,5 @@
 {
-	"name": "keycraft",
+	"name": "keykraft",
 	"version": "1.0.0",
 	"description": "TypeScript-first DynamoDB library built around single-table design",
 	"private": true,
@@ -21,12 +21,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Pfeifenjoy/keycraft.git"
+		"url": "git+https://github.com/Pfeifenjoy/keykraft.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Pfeifenjoy/keycraft/issues"
+		"url": "https://github.com/Pfeifenjoy/keykraft/issues"
 	},
-	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme",
+	"homepage": "https://github.com/Pfeifenjoy/keykraft#readme",
 	"devDependencies": {
 		"cspell": "^10.4.0",
 		"eslint": "^10.13.0",
