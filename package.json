@@ -5,6 +5,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"build": "npx lerna run build",
+		"release": "npm test && npm run build",
 		"test": "npm run test:lint",
 		"test:lint": "npm run test:lint:prettier && npm run test:lint:eslint && npm run test:lint:cspell",
 		"test:lint:prettier": "npx prettier --check .",
@@ -30,6 +32,7 @@
 		"eslint": "^10.13.0",
 		"lerna": "^10.1.1",
 		"prettier": "^3.9.10",
+		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.71.2"
 	}
 }

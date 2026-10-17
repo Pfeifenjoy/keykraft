@@ -1,0 +1,27 @@
+{
+	"name": "@keycraft/schema",
+	"version": "0.0.1",
+	"description": "Table and entity definition primitives for KeyCraft",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "npx tsc"
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pfeifenjoy/keycraft.git"
+	},
+	"dependencies": {
+		"zod": "^4.6.7"
+	}
+}
