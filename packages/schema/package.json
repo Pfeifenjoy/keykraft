@@ -21,6 +21,9 @@
 		"type": "git",
 		"url": "git+https://github.com/Pfeifenjoy/keykraft.git"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"dependencies": {
 		"zod": "^4.6.7"
 	}

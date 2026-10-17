@@ -22,4 +22,4 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: npm ci
       - run: npm run release
-      - run: npx lerna publish from-git --yes --access public --provenance
+      - run: npx lerna publish from-git --yes
