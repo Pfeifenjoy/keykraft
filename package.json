@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "TypeScript-first DynamoDB library built around single-table design",
 	"private": true,
+	"type": "module",
 	"workspaces": [
 		"packages/*"
 	],
@@ -15,6 +16,8 @@
 	},
 	"homepage": "https://github.com/Pfeifenjoy/keycraft#readme",
 	"devDependencies": {
-		"prettier": "^3.9.10"
+		"eslint": "^10.13.0",
+		"prettier": "^3.9.10",
+		"typescript-eslint": "^8.71.2"
 	}
 }
